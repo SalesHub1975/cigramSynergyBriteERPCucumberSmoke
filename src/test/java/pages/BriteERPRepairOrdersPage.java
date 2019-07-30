@@ -12,7 +12,7 @@ public class BriteERPRepairOrdersPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "(//button[@type='button'])[8]")
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-default o_button_import']")
     public WebElement importButton;
 
     @FindBy(xpath = "//li[contains(text(), 'Repair Orders')]")
