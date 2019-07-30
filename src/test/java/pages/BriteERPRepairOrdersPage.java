@@ -5,16 +5,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class RepairOrdersPage {
+public class BriteERPRepairOrdersPage {
 
-    public RepairOrdersPage(){
+    public BriteERPRepairOrdersPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "(//button[@type='button'])[8]")
     public WebElement importButton;
 
-    @FindBy(xpath = "//ol[@class='breadcrumb']")
+    @FindBy(xpath = "//li[contains(text(), 'Repair Orders')]")
     public WebElement repairOrdersHeader;
 
     

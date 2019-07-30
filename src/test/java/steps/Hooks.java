@@ -1,8 +1,7 @@
 package steps;
 
 import cucumber.api.Scenario;
-import org.junit.After;
-import org.junit.Before;
+import cucumber.api.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
@@ -10,15 +9,12 @@ import utilities.Driver;
 public class Hooks {
 
     @Before
-
     public void setup(Scenario scenario){
-
         System.out.println("Hooks  set up for: " + scenario.getName());
     }
 
     @After
-
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario) throws InterruptedException {
 
         System.out.println("Hooks teardown for: " + scenario.getName());
         System.out.println("Status: " + scenario.getStatus());
@@ -30,6 +26,7 @@ public class Hooks {
 
         }
 
+        //Thread.sleep(1000);
         Driver.quitDriver();
     }
 
