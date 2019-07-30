@@ -9,7 +9,7 @@ Feature: Repair Module
 
   @repairsMainPage
   Scenario: Verify Repair Module Main Page
-    Then user should be able to see "Repairs Order" in the page title
+    Then user should be able to see "Repair Orders" in the page title
 
 
   @importButtonVerification

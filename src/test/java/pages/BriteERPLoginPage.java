@@ -1,6 +1,5 @@
 package pages;
 
-import org.graalvm.compiler.asm.sparc.SPARCAssembler;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,6 +8,7 @@ import utilities.Driver;
 public class BriteERPLoginPage {
 
 public BriteERPLoginPage(){
+
     PageFactory.initElements(Driver.getDriver(), this);
 }
 

@@ -8,6 +8,7 @@ import utilities.Driver;
 public class BriteERPInboxPage {
 
 public BriteERPInboxPage(){
+
     PageFactory.initElements(Driver.getDriver(), this);
 }
 
