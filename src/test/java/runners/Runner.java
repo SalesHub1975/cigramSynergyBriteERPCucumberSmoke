@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumberReports",
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@repairsMainPage",
+        tags = "@helpButtonVerification",
         dryRun = false
 
 )
