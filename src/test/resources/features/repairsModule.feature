@@ -44,9 +44,8 @@ Feature: Repair Module
 
     @searchBoxVerification
     Scenario: Search Box verification
-      Given  user on the repairs module main page
+      Given  user is on the repairs module main page
       When user verifies search box is displayed
-      And user verifies if Search...key word is displayed in the search box
       And user clicks on +(plus) button
-      Then user should be able to see three popped up buttons: Filters/Group by/Favorites
+      Then user should be able to see three popped up buttons: Filters, Group by, Favorites
 

@@ -14,4 +14,7 @@ public BriteERPInboxPage(){
 
 @FindBy(xpath = "//span[contains(text(),'Repairs')]")
     public WebElement repairsButton;
+
+
+
 }
