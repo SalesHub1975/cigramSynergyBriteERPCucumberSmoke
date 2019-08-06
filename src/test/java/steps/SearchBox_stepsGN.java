@@ -28,7 +28,7 @@ public class SearchBox_stepsGN {
     public void user_should_be_able_to_see_three_popped_up_buttons_Filters_Group_by_Favorites() {
         Assert.assertTrue("Filters is not displayed", bERP.filters.isDisplayed());
         Assert.assertTrue("Groupby box is not displayed", bERP.groupBy.isDisplayed());
-        Assert.assertTrue("Favorites box is not displayed", bERP.filters.isDisplayed());
+        Assert.assertTrue("Favorites box is not displayed", bERP.favorites.isDisplayed());
     }
 
 

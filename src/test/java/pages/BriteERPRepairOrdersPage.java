@@ -5,6 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BriteERPRepairOrdersPage {
 
     public BriteERPRepairOrdersPage(){
@@ -32,7 +35,44 @@ public class BriteERPRepairOrdersPage {
     public WebElement groupBy;
 
     @FindBy(xpath = "(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[5]")
-    public WebElement favoriets;
+    public WebElement favorites;
+
+    @FindBy(xpath = "//th[contains (text(), 'Repair Reference')]")
+    public WebElement firstColumnName;
+
+    @FindBy(xpath = "//th[contains (text(), 'Product to Repair')]")
+    public WebElement secondColumnName;
+
+    @FindBy(xpath = "//th[contains (text(), 'Customer')]")
+    public WebElement thirdColumnName;
+
+    @FindBy(xpath = "//th[contains (text(), 'Delivery Address')]")
+    public WebElement fourthColumnName;
+
+    @FindBy(xpath = "//th[contains (text(), 'Warranty Expiration')]")
+    public WebElement fifthColumnName;
+
+    @FindBy(xpath = "//th[contains (text(), 'Status')]")
+    public WebElement sixthColumnName;
+
+
+public List<WebElement> getTableColumnNames(){
+    List<WebElement> listOfTableColumnNames = new ArrayList<WebElement>();
+    listOfTableColumnNames.add(null);
+    listOfTableColumnNames.add(firstColumnName);
+    listOfTableColumnNames.add(secondColumnName);
+    listOfTableColumnNames.add(thirdColumnName);
+    listOfTableColumnNames.add(fourthColumnName);
+    listOfTableColumnNames.add(fifthColumnName);
+    listOfTableColumnNames.add(sixthColumnName);
+    return listOfTableColumnNames;
+
+
+}
+
+
+
+
 
 
 }

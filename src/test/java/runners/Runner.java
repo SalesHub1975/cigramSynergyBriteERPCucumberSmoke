@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumberReports",
         features = "src/test/resources/features",
         glue = "steps",
-         tags = "@searchBoxVerification",
+         tags = "@columnNamesVefirication",
         dryRun = false
 
 )
