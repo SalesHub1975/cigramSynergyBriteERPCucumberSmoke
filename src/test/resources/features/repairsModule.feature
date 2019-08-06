@@ -29,12 +29,12 @@ Feature: Repair Module
 
   @columnNamesVefirication
   Scenario Outline: Table Content Verification
-    When user is on the Repairs Module main page
+    When user is on the repairs module main page
     Then user should be able to verify that column "<number>" has "<name>"
 
     Examples: test data to verify column names
       | number | name                |
-      | 1      | Repairs Reference   |
+      | 1      | Repair Reference   |
       | 2      | Product to Repair   |
       | 3      | Customer            |
       | 4      | Delivery Address    |
