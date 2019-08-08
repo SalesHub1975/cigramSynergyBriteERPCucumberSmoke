@@ -9,12 +9,9 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumberReports",
         features = "src/test/resources/features",
         glue = "steps",
-         tags = "@columnNamesVefirication",
+         tags = "@helpButtonVerification",
         dryRun = false
-
 )
-
 public class Runner {
-
 
 }

@@ -12,12 +12,12 @@ Feature: Repair Module
     Then user should be able to see "Repair Orders" in the page title
 
 
-  @importButtonVerification
-  Scenario: Verify import button
-    Given user is on the repairs module main page
-    When user verifies import button is displayed
-    And user clicks import button
-    Then user should verify that page header contains "Import a File"
+#  @importButtonVerification
+#  Scenario: Verify import button
+#    Given user is on the repairs module main page
+#    When user verifies import button is displayed
+#    And user clicks import button
+#    Then user should verify that page header contains "Import a File"
 
 
   @helpButtonVerification

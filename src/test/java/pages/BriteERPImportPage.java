@@ -13,4 +13,7 @@ public class BriteERPImportPage {
 
     @FindBy(xpath = "//a[@class='pull-right']")
     public WebElement helpButton;
+
+    @FindBy(css = ".breadcrumb")
+    public WebElement repairsOrderHeader;
 }
