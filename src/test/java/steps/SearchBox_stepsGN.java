@@ -23,6 +23,8 @@ public class SearchBox_stepsGN {
 
     @When("user clicks on +\\(plus) button")
     public void user_clicks_on_plus_button() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),5);
+        wait.until(ExpectedConditions.visibilityOf(bERP.plusButton));
         bERP.plusButton.click();
     }
 
